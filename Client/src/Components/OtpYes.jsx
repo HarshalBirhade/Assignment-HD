@@ -40,10 +40,15 @@ const OtpYes = () => {
     }
   };
 
+  const handleBack = () => {
+    navigate("/mobile");
+  };
+
+
   return (
     <>
       <MetaData title="OTP" />
-      <button className="btn-pre">
+      <button className="btn-pre" onClick={handleBack}>
         <FaArrowLeft />
       </button>
       <h1 className="headline">
